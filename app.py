@@ -5,7 +5,7 @@ from spotipy.oauth2 import SpotifyClientCredentials
 
 # Set page configuration
 st.set_page_config(
-    page_title="Symphony Scan",
+    page_title="Sistem Rekomendasi Musik",
     layout="wide",
     initial_sidebar_state="expanded",
 )
@@ -48,7 +48,7 @@ def recommend(song, num_recommendations=10):
 
     return recommended_music, recommended_music_posters, similarity_scores, track_urls
 
-st.header('Symphony Scan')
+st.header('Sistem Rekomendasi Musik')
 
 music = pickle.load(open('df.pkl','rb'))
 similarity = pickle.load(open('similarity.pkl','rb'))
