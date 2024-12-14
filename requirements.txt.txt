@@ -1,4 +1,4 @@
-spotipy
 pandas
 pandas-profiling==3.6.6
 scikit-learn
+spotipy
